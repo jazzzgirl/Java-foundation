@@ -1,23 +1,16 @@
-/*
- * ÀÛ¼ºÀÏ : 2021³â 4¿ù 29ÀÏ
- * ÀÛ¼ºÀÚ : ÇĞ°ú ÇĞ¹ø ÀÌ¸§
- * ¼³¸í : MultiDiv Å¬·¡½º »ı¼º.
- * 		°öÇÏ±â, ³ª´©±â °è»êÇÏ´Â ±â´ÉÀÌ ÀÖ´Ù.
- * 		±×¸®°í ´õÇÏ±â »©±â ±â´Éµµ ÀÖ´Ù.(Ãß°¡)
- */
 public class MultiDiv extends PlusMinus {
-	// ¼Ó¼º Á¤ÀÇ
+	// ì†ì„± ì •ì˜
 	int multi;
 	double div;
 	
-	// multi ¸Ş¼Òµå(±â´É) Á¤ÀÇ
+	// multi ë©”ì†Œë“œ(ê¸°ëŠ¥) ì •ì˜
 	public String multi(int x, int y) {
 		multi = x * y;
-		return "µÎ ¼öÀÇ °öÀº " + multi;
+		return "ë‘ ìˆ˜ì˜ ê³±ì€ " + multi;
 	}
-	// div ¸Ş¼Òµå(±â´É) Á¤ÀÇ
+	// div ë©”ì†Œë“œ(ê¸°ëŠ¥) ì •ì˜
 	private String div(int x, int y) {
 		div = x / y;
-		return "µÎ ¼öÀÇ ³ª´« °ªÀº " + div;
+		return "ë‘ ìˆ˜ì˜ ë‚˜ëˆˆ ê°’ì€ " + div;
 	}
 }

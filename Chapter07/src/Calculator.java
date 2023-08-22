@@ -1,39 +1,33 @@
-/*
- * ÀÛ¼ºÀÏ : 
- * ÀÛ¼ºÀÚ : 
- * ¼³¸í : PlusMinus Å¬·¡½º·ÎºÎÅÍ °´Ã¼ »ı¼º.
- * 		 °á°ú Ãâ·Â.
- */
 public class Calculator {
 
 	public static void main(String[] args) {
-		// PlusMinus Å¬·¡½º·ÎºÎÅÍ °´Ã¼ »ı¼º.
+		// PlusMinus í´ë˜ìŠ¤ë¡œë¶€í„° ê°ì²´ ìƒì„±.
 		PlusMinus pm = new PlusMinus();
-		// MultiDiv Å¬·¡½º·ÎºÎÅÍ °´Ã¼ »ı¼º.
+		// MultiDiv í´ë˜ìŠ¤ë¡œë¶€í„° ê°ì²´ ìƒì„±.
 		MultiDiv md = new MultiDiv();
 
-		// º¯¼ö ¼±¾ğ.
+		// ë³€ìˆ˜ ì„ ì–¸.
 		String sum, cha, multi, result;
 		
-		// °´Ã¼¸¦ ÅëÇØ PlusMinusÅ¬·¡½º¿¡ ÀÖ´Â ¸Ş¼Òµå È£Ãâ
+		// ê°ì²´ë¥¼ í†µí•´ PlusMinusí´ë˜ìŠ¤ì— ìˆëŠ” ë©”ì†Œë“œ í˜¸ì¶œ
 		sum = pm.plus(10, 20);
 		System.out.println(sum);
 		
-		// °´Ã¼¸¦ ÅëÇØ¼­ minus ¸Ş¼Òµå È£Ãâ
+		// ê°ì²´ë¥¼ í†µí•´ì„œ minus ë©”ì†Œë“œ í˜¸ì¶œ
 		cha = pm.minus(10, 20);
 		System.out.println(cha);
 		
-		// °´Ã¼¸¦ ÅëÇØ¼­ multi ¸Ş¼Òµå È£Ãâ.
+		// ê°ì²´ë¥¼ í†µí•´ì„œ multi ë©”ì†Œë“œ í˜¸ì¶œ.
 		multi = md.multi(10, 20);
 		System.out.println(multi);
 		
-		// md °´Ã¼¸¦ ÅëÇØ¼­ ´õÇÏ±â °á°ú Ãâ·Â
+		// md ê°ì²´ë¥¼ í†µí•´ì„œ ë”í•˜ê¸° ê²°ê³¼ ì¶œë ¥
 		result = md.plus(3, 5);
 		System.out.println(result);
 		
-		// md °´Ã¼¸¦ ÅëÇØ div ¸Ş¼Òµå È£Ãâ
+		// md ê°ì²´ë¥¼ í†µí•´ div ë©”ì†Œë“œ í˜¸ì¶œ
 		result = md.div(5, 2);
-		// ¿À·ù ¹ß»ı ¿øÀÎ : div ¸Ş¼Òµå´Â private À¸·Î ¼±¾ğµÇ¾î Á¢±ÙÀÌ ºÒ°¡´ÉÇÏ´Ù.
+		// ì˜¤ë¥˜ ë°œìƒ ì›ì¸ : div ë©”ì†Œë“œëŠ” private ìœ¼ë¡œ ì„ ì–¸ë˜ì–´ ì ‘ê·¼ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤.
 		
 	}
 }

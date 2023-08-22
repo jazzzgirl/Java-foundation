@@ -1,72 +1,66 @@
-/*
- * ÀÛ¼ºÀÏ :
- * ÀÛ¼ºÀÚ :
- * ¼³¸í : ¸ŞÀÎ ¸Ş¼Òµå°¡ ÀÖ´Â Å¬·¡½º¿¡ ´Ù¸¥ Å¬·¡¼­ ¼±¾ğÇÏ¿© »ç¿ëÇÏ´Â ¹æ¹ı.
- */
-
-// Å¬·¡½º »ı¼º. - Á¢±Ù ÇÑÁ¤ÀÚ »ç¿ëÇÏÁö ¾ÊÀ½.
+// í´ë˜ìŠ¤ ìƒì„±. - ì ‘ê·¼ í•œì •ì ì‚¬ìš©í•˜ì§€ ì•ŠìŒ.
 class PlusMinus01 {
-	// ¼Ó¼º Á¤ÀÇ - º¯¼ö »ı¼º(¼±¾ğ)
+	// ì†ì„± ì •ì˜ - ë³€ìˆ˜ ìƒì„±(ì„ ì–¸)
 	int plus, minus;
 	
-	// plus ±â´É Á¤ÀÇ(¸Ş¼Òµå)
-	// 2°³ÀÇ Á¤¼öÇü °ªÀ» Àü´Ş ¹Ş¾Æ ÇÕ°è¸¦ ±¸ÇÑ °ªÀ» µ¹·ÁÁØ´Ù.
-	// µ¹·ÁÁØ´Ù -> ¸Ş¼Òµå¸¦ È£ÃâÇÑ °÷À¸·Î ¸®ÅÏÇÑ´Ù.
+	// plus ê¸°ëŠ¥ ì •ì˜(ë©”ì†Œë“œ)
+	// 2ê°œì˜ ì •ìˆ˜í˜• ê°’ì„ ì „ë‹¬ ë°›ì•„ í•©ê³„ë¥¼ êµ¬í•œ ê°’ì„ ëŒë ¤ì¤€ë‹¤.
+	// ëŒë ¤ì¤€ë‹¤ -> ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•œ ê³³ìœ¼ë¡œ ë¦¬í„´í•œë‹¤.
 	public String plus(int x, int y) {
 		plus = x + y;
-		return "µÎ ¼öÀÇ ÇÕÀº " + plus;
+		return "ë‘ ìˆ˜ì˜ í•©ì€ " + plus;
 	}
 	
-	// minus ¸Ş¼Òµå Á¤ÀÇ
-	// 2°³ÀÇ Á¤¼öÇü °ªÀ» Àü´Ş ¹Ş¾Æ Â÷¸¦ ±¸ÇÏ¿© °ªÀ» µ¹·ÁÁØ´Ù.
+	// minus ë©”ì†Œë“œ ì •ì˜
+	// 2ê°œì˜ ì •ìˆ˜í˜• ê°’ì„ ì „ë‹¬ ë°›ì•„ ì°¨ë¥¼ êµ¬í•˜ì—¬ ê°’ì„ ëŒë ¤ì¤€ë‹¤.
 	public String minus(int x, int y) {
 		minus = x - y;
-		return "µÎ ¼öÀÇ Â÷´Â " + minus;
+		return "ë‘ ìˆ˜ì˜ ì°¨ëŠ” " + minus;
 	}
 }
 
 
 class MultiDiv01 extends PlusMinus01 {
-	// ¼Ó¼º Á¤ÀÇ
+	// ì†ì„± ì •ì˜
 	int multi;
 	double div;
 	
-	// multi ¸Ş¼Òµå(±â´É) Á¤ÀÇ
+	// multi ë©”ì†Œë“œ(ê¸°ëŠ¥) ì •ì˜
 	public String multi(int x, int y) {
 		multi = x * y;
-		return "µÎ ¼öÀÇ °öÀº " + multi;
+		return "ë‘ ìˆ˜ì˜ ê³±ì€ " + multi;
 	}
-	// div ¸Ş¼Òµå(±â´É) Á¤ÀÇ
+	// div ë©”ì†Œë“œ(ê¸°ëŠ¥) ì •ì˜
 	public String div(int x, int y) {
 		div = x / y;
-		return "µÎ ¼öÀÇ ³ª´« °ªÀº " + div;
+		return "ë‘ ìˆ˜ì˜ ë‚˜ëˆˆ ê°’ì€ " + div;
 	}
 }
 
 public class Calculator01 {
 
 	public static void main(String[] args) {
-		// PlusMinus Å¬·¡½º·ÎºÎÅÍ °´Ã¼ »ı¼º.
+		// PlusMinus í´ë˜ìŠ¤ë¡œë¶€í„° ê°ì²´ ìƒì„±.
 		PlusMinus01 pm = new PlusMinus01();
-		// MultiDiv Å¬·¡½º·ÎºÎÅÍ °´Ã¼ »ı¼º.
+		// MultiDiv í´ë˜ìŠ¤ë¡œë¶€í„° ê°ì²´ ìƒì„±.
 		MultiDiv01 md = new MultiDiv01();
 
-		// º¯¼ö ¼±¾ğ.
+		// ë³€ìˆ˜ ì„ ì–¸.
 		String sum, cha, multi, result;
 		
-		// °´Ã¼¸¦ ÅëÇØ PlusMinusÅ¬·¡½º¿¡ ÀÖ´Â ¸Ş¼Òµå È£Ãâ
+		// ê°ì²´ë¥¼ í†µí•´ PlusMinusí´ë˜ìŠ¤ì— ìˆëŠ” ë©”ì†Œë“œ í˜¸ì¶œ
 		sum = pm.plus(10, 20);
 		System.out.println(sum);
 		
-		// °´Ã¼¸¦ ÅëÇØ¼­ minus ¸Ş¼Òµå È£Ãâ
+		// ê°ì²´ë¥¼ í†µí•´ì„œ minus ë©”ì†Œë“œ í˜¸ì¶œ
 		cha = pm.minus(10, 20);
 		System.out.println(cha);
 		
-		// °´Ã¼¸¦ ÅëÇØ¼­ multi ¸Ş¼Òµå È£Ãâ.
+		// ê°ì²´ë¥¼ í†µí•´ì„œ multi ë©”ì†Œë“œ í˜¸ì¶œ.
 		multi = md.multi(10, 20);
 		System.out.println(multi);
 		
-		// md °´Ã¼¸¦ ÅëÇØ¼­ ´õÇÏ±â °á°ú Ãâ·Â
+		// md ê°ì²´ë¥¼ í†µí•´ì„œ ë”í•˜ê¸° ê²°ê³¼ ì¶œë ¥
 		result = md.plus(3, 5);
 		System.out.println(result);
 
